@@ -93,6 +93,17 @@ The mode dropdown automatically applies the matching detection config:
 | Mouse: Click | Falling | 50 ms | Pull-up |
 | Keyboard: Key | Falling | 50 ms | Pull-up |
 
+## Known issues & troubleshooting
+
+Carried over from the upstream XLAT README:
+
+- **LCD artifacts / init failure**: if the display fails to initialize or shows
+  artifacts, press **Reboot** or power-cycle the board.
+- **Device not detected**: if the mouse or keyboard is not recognized, first
+  flash the latest firmware (support for new devices is added regularly). If it
+  still fails, the device needs descriptor support — collect the USB VID:PID
+  and the HID report descriptor and report them so it can be added.
+
 ## Building from source
 
 ```sh
