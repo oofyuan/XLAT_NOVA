@@ -52,6 +52,8 @@ XLAT_NOVA 用于测量输入延迟——点击、移动、按键——也就是�
 使用配套刷机工具：
 
 - **macOS**：打开 `XLAT一键刷机.app`
+  - 如果 Gatekeeper 提示「无法验证开发者」，右键 app → **打开**，或在终端执行
+    `xattr -dr com.apple.quarantine "/路径/XLAT一键刷机.app"`。
 - **Windows**：先运行 `1-Install-Driver.bat` 安装 ST-LINK 驱动，再运行 `2-Flash-XLAT.exe`
 
 或手动刷入：
@@ -85,6 +87,9 @@ st-flash --connect-under-reset write build/release/xlat.bin 0x08000000
 | 鼠标: 移动 | 上升沿 | 20ms | 上拉 |
 | 鼠标: 点击 | 下降沿 | 50ms | 上拉 |
 | 键盘: 按键 | 下降沿 | 50ms | 上拉 |
+
+> **测量说明**：移动延迟是通过传感器 MOTION 脚测量的近似值，可能包含传感器
+> 唤醒延迟。要得到实验室级精度，请使用示波器或高速相机。
 
 ## 已知问题与排查
 

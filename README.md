@@ -59,6 +59,8 @@ Compared with the original Finalmouse XLAT firmware, this fork adds or fixes:
 Use the bundled flasher:
 
 - **macOS**: open `XLAT一键刷机.app`
+  - If Gatekeeper shows "cannot verify developer", right-click the app →
+    **Open**, or run `xattr -dr com.apple.quarantine "/path/to/XLAT一键刷机.app"`.
 - **Windows**: run `1-Install-Driver.bat` first, then `2-Flash-XLAT.exe`
 
 Or flash manually:
@@ -92,6 +94,10 @@ The mode dropdown automatically applies the matching detection config:
 | Mouse: Motion | Rising | 20 ms | Pull-up |
 | Mouse: Click | Falling | 50 ms | Pull-up |
 | Keyboard: Key | Falling | 50 ms | Pull-up |
+
+> **Measurement note**: motion latency is measured via the sensor's MOTION pin
+> and is an approximation — it may include sensor wake-up latency. For
+> lab-grade precision, use an oscilloscope or a high-speed camera.
 
 ## Known issues & troubleshooting
 
