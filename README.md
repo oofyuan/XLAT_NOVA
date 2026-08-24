@@ -115,5 +115,11 @@ cmake --build build
 
 ## License
 
-GPLv3. This project is a fork of
-[Finalmouse XLAT](https://github.com/teamfinalmouse/xlat); see [COPYING](COPYING).
+GPLv3. This repository is a **modified version** of the
+[Finalmouse XLAT](https://github.com/teamfinalmouse/xlat) project (GPLv3);
+see [COPYING](COPYING).
+
+The changes made in this fork are described in
+[Improvements over upstream XLAT](#improvements-over-upstream-xlat). Third-party
+libraries (tinyusb, lvgl, FreeRTOS, etc.) are licensed under their respective
+licenses.

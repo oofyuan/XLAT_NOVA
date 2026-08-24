@@ -106,5 +106,8 @@ cmake --build build
 
 ## 许可证
 
-GPLv3。本项目是 [Finalmouse XLAT](https://github.com/teamfinalmouse/xlat) 的分支，
-详见 [COPYING](COPYING)。
+GPLv3。本仓库是 [Finalmouse XLAT](https://github.com/teamfinalmouse/xlat)
+（GPLv3）项目的**修改版**，详见 [COPYING](COPYING)。
+
+本 fork 的改动见「相对官方 XLAT 的改进与修复」。第三方库（tinyusb、lvgl、
+FreeRTOS 等）按各自许可证授权。
